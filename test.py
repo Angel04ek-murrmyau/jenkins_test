@@ -1,2 +1,2 @@
-with open("test.txt") as file:
+with open("test.txt", "w+") as file:
   file.write("Привет от Jenkins!")
