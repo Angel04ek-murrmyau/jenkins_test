@@ -15,5 +15,6 @@ pipeline {
                 sh 'time'
                 sh 'echo "Hello world"'
                 sh 'free -h'
+            }
     }
 }
