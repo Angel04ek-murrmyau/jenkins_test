@@ -6,9 +6,14 @@ pipeline {
             steps {
                 git url: 'https://github.com/Angel04ek-murrmyau/jenkins_test.git', branch: 'main'
                 sh 'python3 test.py'
-                sh 'echo "Hello world"'
-                sh 'date'
             }
         }
+        stage('Some things') {
+            steps {
+                git url: 'https://github.com/Angel04ek-murrmyau/jenkins_test.git', branch: 'main'
+                sh 'date'
+                sh 'time'
+                sh 'echo "Hello world"'
+                sh 'free -h'
     }
 }
